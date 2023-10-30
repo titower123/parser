@@ -25,7 +25,7 @@ news_kb = ReplyKeyboardMarkup(
             KeyboardButton(text="Отправить еще новостей"),
         ],
         [
-            KeyboardButton(text="Назад"),
+            KeyboardButton(text="НАЗАД"),
         ]
     ],
     resize_keyboard=True,
