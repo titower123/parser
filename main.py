@@ -1,8 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-
-def get_10_new_article():
+def get_10_new_article(a):
     counter = 0
     answer = []
     headers = {
@@ -14,7 +13,7 @@ def get_10_new_article():
     soup = BeautifulSoup(r.text, "lxml")
     article_cards = soup.find_all("article", class_="tm-articles-list__item")
     for article in article_cards:
-        if counter < 10:
+        if counter < a:
             article_name = article.find("a", class_="tm-title__link").text.strip()
             article_rate = article.find("div", class_="tm-votes-meter tm-data-icons__item").get_text()
             article_help_ulr = article.find("a", class_="tm-title__link").get("href")

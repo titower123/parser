@@ -11,7 +11,7 @@ main_kb = ReplyKeyboardMarkup(
         ],
         [
             KeyboardButton(text='Выбор новостей'),
-        ]
+        ],
     ],
     resize_keyboard=True,
     one_time_keyboard=True,
@@ -55,7 +55,7 @@ news_kb = ReplyKeyboardMarkup(
 #     ],
 #     resize_keyboard=True
 # )
-
+#
 # class Pagination(CallbackData, prefix="pag"):
 #     action: str
 #     page: int
